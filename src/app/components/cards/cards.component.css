@@ -1,0 +1,14 @@
+.img-profile {
+  position: absolute;
+}
+
+.img-profile img {
+  background: white;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: center;
+}
+
+cdk-virtual-scroll-viewport {
+  height: 100vh;
+}

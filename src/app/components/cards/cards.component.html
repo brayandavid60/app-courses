@@ -1,0 +1,26 @@
+<div class="row row-cols-1 row-cols-md-3 animated fadeIn">
+  <div class="col mb-4" *ngFor="let item of items">
+    <div class="card">
+      <div class="card-header py-3">
+        <div class="img-profile rounded">
+          <img class="rounded" width="60px" height="60px" src="https://mytablemesa.com{{item.imageUrl}}" />
+        </div>
+        <span class="badge badge-pill badge-light border text-muted float-right py-1 px-3">{{item.maximumCredits}} CREDIT</span>
+      </div>
+      <div class="card-body pt-4 mt-1">
+        <h6 class="card-title mb-1 text-truncate">{{item.name}}</h6>
+        <p class="card-text text-muted text-truncate"><small>{{item.description}}</small></p>
+      </div>
+      <div class="card-footer bg-white border-0 py-0">
+        <dl class="row">
+          <dt class="col-6 text-primary text-left">
+            $ {{item.price}}
+          </dt>
+          <dd class="col-6 text-right">
+            {{item.rating}} / 5
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
